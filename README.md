@@ -1,5 +1,39 @@
 #  **git基本操作**
 
+## 命令速查：
+
  ![git](src/git.jpg) 
 
 `$   git   remote   set-url   <remote>   <url>` 	#更改远程版本库
+
+## 初次安装git需要配置用户名和邮箱(并不是github用户名和邮箱)
+
+`$ git config --global user.name "随意名字"`
+
+`$ git config --global user.email "随意邮箱"`
+
+## git使用ssh密钥
+
+1、查看是否存在id_rsa和id_rsa.pub(或者是id_dsa和id_dsa.pub之类成对的文件)
+
+`$ ls -al ~/.ssh` 
+
+2、没有则用命令创建，之后一路按回车即可
+
+`$ ssh-keygen -t rsa -C "你的邮箱"` 
+
+3、查看公钥
+
+`$ cat ~/.ssh/id_rsa.pub` 
+
+4、登陆你的github帐户。点击你的头像，然后 Settings -> 左栏点击 SSH and GPG keys -> 点击 New SSH key。
+
+然后你复制上面的公钥内容，粘贴进“Key”文本域内。 title域，自己随便起个名字。
+
+点击 Add key。
+
+5、验证
+
+`$ ssh -T git@github.com` 
+
+出现`Hi xxx! You've successfully authenticated, but GitHub does not # provide shell access.` 就成功了。
