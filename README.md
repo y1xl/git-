@@ -6,6 +6,16 @@
 
 `$   git   remote   set-url   <remote>   <url>` 	#更改远程版本库
 
+## 将 git add 和 git commit -m 命令合二为一
+
+1、合并命令
+
+`git config --global alias.ac '!git add -A && git commit -m '`
+
+2、使用命令
+
+`git ac "提交信息"` 
+
 ## 初次安装git需要配置用户名和邮箱(并不是github用户名和邮箱)
 
 `$ git config --global user.name "随意名字"`
