@@ -8,6 +8,8 @@
 
 `$  git checkout -b <name>`					#创建并切换分支
 
+`git push origin master --force`                          #强制更新
+
 ## 暂存命令
 
 1、将当前工作区的操作暂存
@@ -41,6 +43,8 @@
 `$ git reset --hard HEAD^` 		#回退到上一个版本
 
 ## 初次安装git需要配置用户名和邮箱(并不是github用户名和邮箱)
+
+`$ git config --list `       #查看 配置信息列表
 
 `$ git config --global user.name "随意名字"`
 
