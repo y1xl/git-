@@ -46,9 +46,13 @@
 
 `$ git config --list `       #查看 配置信息列表
 
-`$ git config --global user.name "随意名字"`
+`$ git config user.name `       #查看 用户名
 
-`$ git config --global user.email "随意邮箱"`
+`$ git config user.email `       #查看 邮箱
+
+`$ git config --global user.name "随意名字"`  #修改 用户名
+
+`$ git config --global user.email "随意邮箱"`  #修改 邮箱
 
 ## git使用ssh密钥
 
