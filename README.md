@@ -10,6 +10,8 @@
 
 `git push origin master --force`                          #强制更新
 
+`git merge --no-ff -m "描述" <master>`   #合并同时生成一个新的commit
+
 ## 暂存命令
 
 1、将当前工作区的操作暂存
